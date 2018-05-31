@@ -93,29 +93,3 @@ input{
     margin-left: 20px;
     color: #b3e6ff;
 }
-
-.arrow{
-  fill: #ffc61a;
-}
-
-.arrow:hover{
-    cursor: pointer;
-}
-
-.reversed{
-   transform-origin: center center;
-   transform: rotate(180deg);
-}
-
-
-/*
-yellow colors
-
-.input-group-label{
-    background-color: #ffd966;
-}
-
-.input-group-field{
-    background-color: #ffecb3;
-}
-*/
