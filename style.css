@@ -1,12 +1,15 @@
 ﻿body{
     background-color: #015C65;
     font-family: 'Cabin', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 h1{
     color: #ffc61a;
     margin-left: 20px;
     font-family: 'Overlock', cursive;
+    font-size: 3em;
 }
 
 svg{
@@ -20,6 +23,7 @@ svg{
 
 .settings{
     background-color: #028E9B;
+    margin-top: 20px;
 }
 
 .genBtn{
@@ -49,11 +53,6 @@ svg{
     font-family: 'Droid Serif', serif;
 }
 
-.row{
-    padding-top: 15px;
-    margin: 0;
-}
-
 a{
     color:#ffc61a;
 }
@@ -66,13 +65,24 @@ strong{
     color: #ffd966;
 }
 
+input{
+    padding: 5px;
+    font-size: 1.2em
+}
+
+.input-group{
+    display: inline-block;
+}
 
 .input-group-label{
     background-color: #80d4ff;
+    font-size: 1.2em;
+    padding: 5px;
 }
 
 .input-group-field{
     background-color: #b3e6ff;
+    width: 50px;
 }
 
 .input-group-field:focus{
@@ -80,7 +90,6 @@ strong{
 }
 
 .about{
-    display: none;
     margin-left: 20px;
     color: #b3e6ff;
 }
