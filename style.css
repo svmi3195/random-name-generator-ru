@@ -1,0 +1,112 @@
+﻿body{
+    background-color: #015C65;
+    font-family: 'Cabin', sans-serif;
+}
+
+h1{
+    color: #ffc61a;
+    margin-left: 20px;
+    font-family: 'Overlock', cursive;
+}
+
+svg{
+    display: inline;
+}
+
+#skeleton{
+	max-width: 200px;
+	background-color: #b3e6ff;
+}
+
+.settings{
+    background-color: #028E9B;
+}
+
+.genBtn{
+    margin: 20px auto 10px auto;
+    text-align: center;
+    background-color: #028E9B;
+    padding: 5px;
+    border: 1px solid #ffc61a;
+    border-radius: 5px;
+    color: #ffc61a;
+    font-size: x-large;
+    font-family: 'Cabin', sans-serif;
+}
+
+.genBtn:hover{
+    background-color: #03a1b0;
+}
+
+.centered{
+  text-align: center;
+}
+
+.result{
+    color:#ffc61a;
+    padding: 10px;
+    font-size: xx-large;
+    font-family: 'Droid Serif', serif;
+}
+
+.row{
+    padding-top: 15px;
+    margin: 0;
+}
+
+a{
+    color:#ffc61a;
+}
+
+a:hover{
+    color:yellow;
+}
+
+strong{
+    color: #ffd966;
+}
+
+
+.input-group-label{
+    background-color: #80d4ff;
+}
+
+.input-group-field{
+    background-color: #b3e6ff;
+}
+
+.input-group-field:focus{
+    background-color: #b3e6ff;
+}
+
+.about{
+    display: none;
+    margin-left: 20px;
+    color: #b3e6ff;
+}
+
+.arrow{
+  fill: #ffc61a;
+}
+
+.arrow:hover{
+    cursor: pointer;
+}
+
+.reversed{
+   transform-origin: center center;
+   transform: rotate(180deg);
+}
+
+
+/*
+yellow colors
+
+.input-group-label{
+    background-color: #ffd966;
+}
+
+.input-group-field{
+    background-color: #ffecb3;
+}
+*/
