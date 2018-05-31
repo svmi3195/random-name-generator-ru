@@ -1,15 +1,7 @@
-$( document ).ready(go);
-
-function go(){
-  
-  $(".input-group-field").on("change", function(){
-    var length = $('.length').val();    
-  })
-
-  $('button').on('click', function(){
-    var length = $('.length').val();
-    var quantity = $('.quantity').val();
-
+  document.getElementById('genBtn').onclick = function(event){
+    console.log('x')
+    var length = document.getElementById('length').value;
+    var quantity = document.getElementById('quantity').value;
 
     var output = "";
 
@@ -17,9 +9,8 @@ function go(){
       output += generate(length) + "<br>";
     }
 
-    $('.result').html(output);
-  })
-}//end of go function
+    document.getElementById('result').innerHTML = output;
+  }
 
 //numbers in arrays - generic frequency, soft, harsh, snake
 var freqsVowels = {
@@ -66,8 +57,8 @@ function generate(length){
   
   
   var pattern = [];
-  if($('#skeleton').val().length > 0){
-	  pattern = $('#skeleton').val().split('');
+  if(document.getElementById('skeleton').value.length > 0){
+	  pattern = document.getElementById('skeleton').value.split('');
   }else{
 	  pattern = makePattern(length);
   }
