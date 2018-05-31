@@ -1,16 +1,6 @@
 $( document ).ready(go);
 
 function go(){
-
-  $(".arrow").on("click", function(){
-    $('.about').slideToggle();
-    if($('.arrow').hasClass('reversed')){
-      $('.arrow').removeClass('reversed')
-    }else{
-      $('.arrow').addClass("reversed"); 
-    }    
-  });
-
   
   $(".input-group-field").on("change", function(){
     var length = $('.length').val();    
