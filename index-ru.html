@@ -16,26 +16,21 @@
 <link rel="stylesheet" type="text/css" href="style.css"/>
 
 
-<title>Random Name Generator</title>
+<title>Генератор рандомных имён</title>
 
 </head>
 
 <body>
 
-  <h1>Random name generator
+  <h1>Генератор рандомных имён
     <svg width="40" height="20">
       <polygon points="0,0 40,0 20,20" class='arrow'/>
     </svg>
 </h1>
 
 <div class="about">
-  <p>This is a little program which generates random names based on letters frequency. It generates completely random names, not related to any real ones. Of course, it can accidentally create existing names or even words.</p>
-  <p><strong>Length</strong> option defines name length. Minimum is 2 letters length and maximum is 10. However, long names (with length 7 and more) trend to look less natural.</p>
-  <p>A few names styles are available in the program. <strong>General</strong> is most random, plus it allowes two vowels or consonants go one after another in a row, that is clusters and diphthongs are possible (but random). <strong>Simplistic</strong> style will always have a vowel following a consonant and vice versa, disallowing clusters; usually such names will be easiest to pronounce and look most natural. <strong>Soft</strong> style has generally more vowels and adjusted frequencies for all letters. <strong>Harsh</strong> style has more consonants and frequencies are changed too to make it sound more hard and strong. <strong>Snake</strong> style is for fun, made to resemble snake's hissing.</p>
-  <p><strong>Favourite</strong> option makes possibility for encountering certain letter dramatically higher.</p>
-  <p><strong>Quantity</strong> option lets to generate many names at once.</p>
-  <p>Readme and source code can be found <a href="https://github.com/svmi3195/random_name_generator">here</a>.</p>
-  <p>You can also define name "skeleton" yourself, 0 (zero) for vowels, 1 (one) for consonants:</p>
+  <p>Эта небольшая программа генерирует рандомные имена/названия в зависимости от частотности букв в русском языке.</p>
+  <p>В поле ниже можно задать "скелет" слова, 0 (ноль) для гласных, 1 (единица) для согласных</p>
   <input type="text" id="skeleton">
   
   </div>
@@ -45,7 +40,7 @@
 
   <div class="column small-12 medium-4 large-2">
     <div class="input-group">
-      <span class="input-group-label">Length</span>
+      <span class="input-group-label">Длина</span>
       <input class="input-group-field length" type="number" min="2" max="10" value="5">
   </div>
   </div>
@@ -53,7 +48,7 @@
 
   <div class="column small-12 medium-4 large-2">
     <div class="input-group">
-      <span class="input-group-label">Quantity</span>
+      <span class="input-group-label">Количество</span>
       <input class="input-group-field quantity" type="number" min="1" max="10" value="1">
   </div>
   </div>
@@ -61,7 +56,7 @@
 
 
 </div>
-<div class="centered"><button type="button" class="genBtn">Generate</button></div>
+<div class="centered"><button type="button" class="genBtn">Генерировать</button></div>
 
 <div class="result centered">_ _ _ _ _</div>
 
