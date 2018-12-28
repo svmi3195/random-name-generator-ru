@@ -2,17 +2,17 @@ document.getElementById('genBtn').onclick = function (event) {
   console.log('x')
   var length = document.getElementById('length').value;
   var quantity = document.getElementById('quantity').value;
+  var style = document.getElementById('style').value;
 
   var output = "";
 
   for (var i = 1; i <= quantity; i++) {
-    output += generate(length) + "<br>";
+    output += generate(length, style) + "<br>";
   }
 
   document.getElementById('result').innerHTML = output;
 }
 
-//numbers in arrays - generic frequency, soft, harsh, snake
 var freqsVowels = {
   а: [8],
   е: [8],
@@ -25,7 +25,6 @@ var freqsVowels = {
   э: [1]
 };
 
-//numbers in arrays - generic frequency, soft, harsh, snake
 var freqsCons = {
   б: [2],
   ц: [2],
@@ -49,10 +48,9 @@ var freqsCons = {
   з: [2]
 };
 
-function generate(length) {
-  var vowels = createVowels(1);
-  var consonants = createConsonants(1);
-
+function generate(length, style) {
+  var vowels = createVowels(style);
+  var consonants = createConsonants(style);
 
   var pattern = [];
   if (document.getElementById('skeleton').value.length > 0) {
@@ -71,7 +69,6 @@ function generate(length) {
     }
   }
 
-
   name[0] = name[0].charAt(0).toUpperCase() + name[0].slice(1);
 
   return name.join("");
@@ -82,7 +79,6 @@ function makePattern(length) {
 
   var pattern = [];
 
-
   for (var i = 0; i < length; i++) {
     if (pattern.length > 1 && pattern[i - 1] == 0 && pattern[i - 2] == 0) {
       pattern[i] = 1;
@@ -92,7 +88,6 @@ function makePattern(length) {
       pattern[i] = Math.round(Math.random());
     }
   }
-
 
   return pattern;
 }//end of makePattern
@@ -106,26 +101,24 @@ function freqArray(letter, frequency) {
   return arr;
 }//end of freqArray
 
-
-function createVowels() {
+function createVowels(style) {
   var vowels = [];
 
   for (var property in freqsVowels) {
     if (freqsVowels.hasOwnProperty(property)) {
-      vowels = vowels.concat(freqArray(property, freqsVowels[property][0]));
+      vowels = vowels.concat(freqArray(property, freqsVowels[property][style]));
     }
   }
   return vowels;
 }
 
-function createConsonants() {
+function createConsonants(style) {
   var consonants = [];
 
   for (var property in freqsCons) {
     if (freqsCons.hasOwnProperty(property)) {
-      consonants = consonants.concat(freqArray(property, freqsCons[property][0]));
+      consonants = consonants.concat(freqArray(property, freqsCons[property][style]));
     }
   }
-
   return consonants;
 }
