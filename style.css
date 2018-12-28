@@ -1,6 +1,6 @@
 ﻿body{
     background-color: #015C65;
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Arial', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -35,7 +35,7 @@ svg{
     border-radius: 5px;
     color: #ffc61a;
     font-size: x-large;
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 .genBtn:hover{
@@ -50,7 +50,7 @@ svg{
     color:#ffc61a;
     padding: 10px;
     font-size: xx-large;
-    font-family: 'Droid Serif', serif;
+    font-family: 'Times New Roman', serif;
 }
 
 a{
